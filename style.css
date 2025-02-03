@@ -1,118 +1,159 @@
 /* styles.css */
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #0a0a0a;
-    color: #fff;
-    text-align: center;
-    animation: fadeIn 2s ease-in-out;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0a0a0a;
+  color: #fff;
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
 }
 
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: #111;
-    animation: slideDown 1s ease-out;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #111;
+  animation: slideDown 1s ease-out;
 }
 
 @keyframes slideDown {
-    0% {
-        transform: translateY(-100%);
-    }
-    100% {
-        transform: translateY(0);
-    }
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    animation: fadeIn 2s ease-in-out 1s;
+  font-size: 24px;
+  font-weight: bold;
+  animation: fadeIn 2s ease-in-out 1s;
 }
 
 nav ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 nav ul li {
-    display: inline;
+  display: inline;
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
-    color: #ff6600;
+  color: #ff6600;
 }
 
 .btn {
-    background-color: #ff6600;
-    padding: 10px 20px;
-    border-radius: 5px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
+  background-color: #ff6600;
+  padding: 10px 20px;
+  border-radius: 5px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn:hover {
-    background-color: #ff4d00;
+  background-color: #ff4d00;
+  transform: scale(1.05); /* Apply zoom effect on hover */
 }
 
+/* Devfolio Button Custom Styles */
+.apply-button {
+  height: 40px; /* Adjust height */
+  width: 270px; /* Adjust width */
+  background-color: #ff6347; /* Button color */
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px; /* Center text vertically */
+  border-radius: 8px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  border: 2px solid transparent; /* Border styling */
+}
+
+.apply-button:hover {
+  background-color: #ff4500; /* Darker color on hover */
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+.apply-button:focus {
+  outline: none; /* Remove default focus outline */
+  border: 2px solid #00bfff; /* Add custom focus outline */
+}
+
+/* Align button container */
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the button horizontally */
+  gap: 15px;
+  margin-top: 20px;
+}
+
+/* Hero Section */
 #hero {
-    padding: 100px 20px;
-    background: url('background-image.jpg') no-repeat center center/cover;
-    animation: fadeIn 2s ease-in-out 0.5s;
+  padding: 100px 20px;
+  background: url("background-image.jpg") no-repeat center center/cover;
+  animation: fadeIn 2s ease-in-out 0.5s;
 }
 
-h1 {
-    font-size: 40px;
-    animation: slideUp 1s ease-out;
+#hero h1 {
+  font-size: 50px; /* Adjust font size for better visibility */
+  animation: slideUp 1s ease-out;
+  font-family: "Arial", sans-serif; /* Change to a different font family */
+  font-weight: bold; /* Make the font bold */
+  background: linear-gradient(90deg, #ff6600, #ff4d00); /* Gradient color */
+  -webkit-background-clip: text; /* Apply gradient to text */
+  color: transparent; /* Make the text color transparent to show the gradient */
+  display: inline-block;
+  letter-spacing: 2px; /* Add some spacing between the letters */
 }
 
-@keyframes slideUp {
-    0% {
-        transform: translateY(30px);
-        opacity: 0;
-    }
-    100% {
-        transform: translateY(0);
-        opacity: 1;
-    }
+#hero h1 span {
+  font-size: 70px; /* Adjust font size for 2025 */
+  color: #ff6347; /* Color for 2025 */
 }
 
 h2 {
-    font-size: 30px;
-    margin-top: 20px;
-    animation: fadeIn 2s ease-in-out 1.5s;
+  font-size: 30px;
+  margin-top: 20px;
+  animation: fadeIn 2s ease-in-out 1.5s;
 }
 
 section {
-    padding: 50px 20px;
-    animation: fadeIn 2s ease-in-out 2s;
+  padding: 50px 20px;
+  animation: fadeIn 2s ease-in-out 2s;
 }
 
+/* Footer Section */
 footer {
-    background-color: #111;
-    padding: 20px;
-    margin-top: 20px;
-    animation: fadeIn 2s ease-in-out 2.5s;
+  background-color: #111;
+  padding: 20px;
+  margin-top: 20px;
+  animation: fadeIn 2s ease-in-out 2.5s;
 }
+
