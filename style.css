@@ -1,0 +1,118 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0a0a0a;
+    color: #fff;
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #111;
+    animation: slideDown 1s ease-out;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-100%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    animation: fadeIn 2s ease-in-out 1s;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ff6600;
+}
+
+.btn {
+    background-color: #ff6600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #ff4d00;
+}
+
+#hero {
+    padding: 100px 20px;
+    background: url('background-image.jpg') no-repeat center center/cover;
+    animation: fadeIn 2s ease-in-out 0.5s;
+}
+
+h1 {
+    font-size: 40px;
+    animation: slideUp 1s ease-out;
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out 1.5s;
+}
+
+section {
+    padding: 50px 20px;
+    animation: fadeIn 2s ease-in-out 2s;
+}
+
+footer {
+    background-color: #111;
+    padding: 20px;
+    margin-top: 20px;
+    animation: fadeIn 2s ease-in-out 2.5s;
+}
