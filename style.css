@@ -75,41 +75,42 @@ nav ul li a:hover {
 
 .btn:hover {
   background-color: #ff4d00;
-  transform: scale(1.05); /* Apply zoom effect on hover */
+  transform: scale(1.05);
 }
 
-/* Devfolio Button Custom Styles */
+/* Devfolio Apply Button - Blue Theme */
 .apply-button {
-  height: 40px; /* Adjust height */
-  width: 270px; /* Adjust width */
-  background-color: #ff6347; /* Button color */
+  height: 40px;
+  width: 270px;
+  background-color: #007bff; /* Blue color */
   color: #fff;
   display: inline-block;
   text-align: center;
-  line-height: 40px; /* Center text vertically */
-  border-radius: 8px; /* Rounded corners */
-  font-size: 16px; /* Font size */
+  line-height: 40px;
+  border-radius: 8px;
+  font-size: 16px;
   font-weight: bold;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.2s;
-  border: 2px solid transparent; /* Border styling */
+  border: 2px solid transparent;
+  text-decoration: none;
 }
 
 .apply-button:hover {
-  background-color: #ff4500; /* Darker color on hover */
-  transform: scale(1.05); /* Slight zoom effect */
+  background-color: #0056b3; /* Darker Blue on Hover */
+  transform: scale(1.05);
 }
 
 .apply-button:focus {
-  outline: none; /* Remove default focus outline */
-  border: 2px solid #00bfff; /* Add custom focus outline */
+  outline: none;
+  border: 2px solid #00bfff; /* Light Blue Border on Focus */
 }
 
 /* Align button container */
 .button-container {
   display: flex;
   align-items: center;
-  justify-content: center; /* Center the button horizontally */
+  justify-content: center;
   gap: 15px;
   margin-top: 20px;
 }
@@ -122,20 +123,20 @@ nav ul li a:hover {
 }
 
 #hero h1 {
-  font-size: 50px; /* Adjust font size for better visibility */
+  font-size: 50px;
   animation: slideUp 1s ease-out;
-  font-family: "Arial", sans-serif; /* Change to a different font family */
-  font-weight: bold; /* Make the font bold */
-  background: linear-gradient(90deg, #ff6600, #ff4d00); /* Gradient color */
-  -webkit-background-clip: text; /* Apply gradient to text */
-  color: transparent; /* Make the text color transparent to show the gradient */
+  font-family: "Arial", sans-serif;
+  font-weight: bold;
+  background: linear-gradient(90deg, #ff6600, #ff4d00);
+  -webkit-background-clip: text;
+  color: transparent;
   display: inline-block;
-  letter-spacing: 2px; /* Add some spacing between the letters */
+  letter-spacing: 2px;
 }
 
 #hero h1 span {
-  font-size: 70px; /* Adjust font size for 2025 */
-  color: #ff6347; /* Color for 2025 */
+  font-size: 70px;
+  color: #ff6347;
 }
 
 h2 {
@@ -156,3 +157,4 @@ footer {
   margin-top: 20px;
   animation: fadeIn 2s ease-in-out 2.5s;
 }
+
