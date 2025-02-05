@@ -1,5 +1,4 @@
-/* styles.css */
-
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -19,6 +18,7 @@ body {
   }
 }
 
+/* Navigation Bar */
 nav {
   display: flex;
   justify-content: space-between;
@@ -63,6 +63,7 @@ nav ul li a:hover {
   color: #ff6600;
 }
 
+/* Buttons */
 .btn {
   background-color: #ff6600;
   padding: 10px 20px;
@@ -78,11 +79,11 @@ nav ul li a:hover {
   transform: scale(1.05);
 }
 
-/* Devfolio Apply Button - Blue Theme */
+/* Devfolio Apply Button */
 .apply-button {
   height: 40px;
   width: 270px;
-  background-color: #007bff; /* Blue color */
+  background-color: #007bff;
   color: #fff;
   display: inline-block;
   text-align: center;
@@ -97,13 +98,13 @@ nav ul li a:hover {
 }
 
 .apply-button:hover {
-  background-color: #0056b3; /* Darker Blue on Hover */
+  background-color: #0056b3;
   transform: scale(1.05);
 }
 
 .apply-button:focus {
   outline: none;
-  border: 2px solid #00bfff; /* Light Blue Border on Focus */
+  border: 2px solid #00bfff;
 }
 
 /* Align button container */
@@ -127,35 +128,39 @@ nav ul li a:hover {
   animation: slideUp 1s ease-out;
   font-family: "Arial", sans-serif;
   font-weight: bold;
-  background: linear-gradient(90deg, #ff6600, #ff4d00);
-  -webkit-background-clip: text;
-  color: transparent;
-  display: inline-block;
   letter-spacing: 2px;
 }
 
-#hero h1 span {
-  font-size: 70px;
-  color: #ff6347;
+/* Updated Gradient Effect for "नक्षत्र" and "2025" */
+.gradient-text {
+  font-size: inherit;
+  font-weight: bold;
+  background: linear-gradient(to right, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
 }
 
+/* Headings */
 h2 {
   font-size: 30px;
   margin-top: 20px;
   animation: fadeIn 2s ease-in-out 1.5s;
 }
 
+/* Sections */
 section {
   padding: 50px 20px;
   animation: fadeIn 2s ease-in-out 2s;
 }
 
-/* Footer Section */
+/* Footer */
 footer {
   background-color: #111;
   padding: 20px;
   margin-top: 20px;
   animation: fadeIn 2s ease-in-out 2.5s;
 }
+
 
 
